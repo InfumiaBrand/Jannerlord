@@ -2,8 +2,18 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.1</TargetFramework>
-      <OutDir>../../bin/Win64_Shipping_Client</OutDir>
-      <OutputPath>../../bin/Win64_Shipping_Client</OutputPath>
+      <OutDir>../bin/Win64_Shipping_Client</OutDir>
+      <OutputPath>../bin/Win64_Shipping_Client</OutputPath>
+      <Title>Jannerlord</Title>
+      <Authors>Hasan Demirtaş</Authors>
+      <Description>Allows you to make Bannerlord mods with Java.</Description>
+      <PackageProjectUrl>https://github.com/portlek/Jannerlord</PackageProjectUrl>
+      <PackageLicenseUrl>https://github.com/portlek/Jannerlord/blob/master/LICENSE</PackageLicenseUrl>
+      <RepositoryUrl>https://github.com/portlek/Jannerlord</RepositoryUrl>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <OutputPath>..\bin\Win64_Shipping_Client\</OutputPath>
     </PropertyGroup>
 
     <ItemGroup>
