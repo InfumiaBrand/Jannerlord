@@ -4,4 +4,13 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+        <None Include="..\..\SubModule.xml">
+            <Link>SubModule.xml</Link>
+        </None>
+        <None Include="..\..\README.md">
+            <Link>README.md</Link>
+        </None>
+    </ItemGroup>
+
 </Project>
