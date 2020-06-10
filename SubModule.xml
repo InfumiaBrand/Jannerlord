@@ -5,6 +5,16 @@
     <Version value="v1.0.0"/>
     <SingleplayerModule value="true"/>
     <MultiplayerModule value="false"/>
-    <!-- TODO -->
+    <SubModules>
+        <SubModule>
+            <Name value="Jannerlord"/>
+            <DLLName value="Jannerlord.dll"/>
+            <SubModuleClassType value="Jannerlord.JannerlordSubModule"/>
+            <Tags>
+                <Tag key="DedicatedServerType" value="none"/>
+                <Tag key="IsNoRenderModeElement" value="false"/>
+            </Tags>
+        </SubModule>
+    </SubModules>
     <Xmls/>
 </Module>
