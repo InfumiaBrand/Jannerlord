@@ -1,6 +1,6 @@
 ﻿namespace Jannerlord{
 
-    public class JannerlordSubModule : MBSubModuleBase{
+    public class JannerlordSubModule {
         
     }
 
