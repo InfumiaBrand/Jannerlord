@@ -2,10 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.1</TargetFramework>
-    </PropertyGroup>
-
-    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-      <OutputPath>..\bin\Win64_Shipping_Client\</OutputPath>
+      <OutDir>../../bin/Win64_Shipping_Client</OutDir>
+      <OutputPath>../../bin/Win64_Shipping_Client</OutputPath>
     </PropertyGroup>
 
     <ItemGroup>
