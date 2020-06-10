@@ -1,2 +1,2 @@
 # Jannerlord
-Bannerlord mods with Java.
+Allows you to make Bannerlord mods with Java.
