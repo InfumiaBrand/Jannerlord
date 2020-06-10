@@ -1,7 +1,8 @@
-﻿﻿namespace Jannerlord {
+﻿using TaleWorlds.*;
 
-      public partial class JannerlordSubModule {
-            
-      }
-     
-}
+﻿namespace Jannerlord {
+	 public partial class JannerlordSubModule{
+		 
+	 }
+
+ }
