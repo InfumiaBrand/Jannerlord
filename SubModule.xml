@@ -5,8 +5,6 @@
     <Version value="v1.0.0"/>
     <SingleplayerModule value="true"/>
     <MultiplayerModule value="false"/>
-    <Official value="false"/>
-    <DependedModules/>
     <SubModules>
         <SubModule>
             <Name value="Jannerlord"/>
