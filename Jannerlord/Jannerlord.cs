@@ -1,6 +1,10 @@
-﻿namespace Jannerlord{
+﻿using TaleWorlds.MountAndBlade;
 
-    public class JannerlordSubModule {
+namespace Jannerlord{
+
+    public class JannerlordSubModule : MBSubModuleBase {
+        
+        
         
     }
 
