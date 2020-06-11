@@ -100,9 +100,6 @@
     <Content Include="SubModule.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include=".git\objects\info" />
     <Folder Include=".git\refs\tags" />
   </ItemGroup>
