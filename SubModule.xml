@@ -1,20 +1,25 @@
 ﻿<Module>
-    <Name value="Jannerlord"/>
-    <Id value="Jannerlord"/>
-    <Version value="v1.0.0"/>
-    <SingleplayerModule value="true"/>
-    <MultiplayerModule value="false"/>
-    <DependedModules/>
-    <SubModules>
-        <SubModule>
-            <Name value="Jannerlord"/>
-            <DLLName value="Jannerlord.dll"/>
-            <SubModuleClassType value="Jannerlord.JannerlordSubModule"/>
-            <Tags>
-                <Tag key="DedicatedServerType" value="none"/>
-                <Tag key="IsNoRenderModeElement" value="false"/>
-            </Tags>
-        </SubModule>
-    </SubModules>
-    <Xmls/>
+  <Name value="JannerlordTemplate a Bannerlord Mod"/>
+  <Id value="JannerlordTemplate"/>
+  <Version value="v1.0.0"/>
+  <SingleplayerModule value="true"/>
+  <MultiplayerModule value="false"/>
+  <DependedModules>
+    <DependedModule Id="Native"/>
+    <DependedModule Id="SandBoxCore"/>
+    <DependedModule Id="Sandbox"/>
+    <DependedModule Id="StoryMode" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="JannerlordTemplate"/>
+      <DLLName value="JannerlordTemplate.dll"/>
+      <SubModuleClassType value="JannerlordTemplate.SubModule"/>
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls/>
 </Module>
