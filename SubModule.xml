@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Module>
+﻿<Module>
     <Name value="Jannerlord"/>
     <Id value="Jannerlord"/>
-    <Version value="v0.1.0"/>
+    <Version value="v.0.0"/>
     <SingleplayerModule value="true"/>
     <MultiplayerModule value="false"/>
     <DependedModules/>
