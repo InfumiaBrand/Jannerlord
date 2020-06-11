@@ -29,69 +29,20 @@
         <DefineConstants>$(DefineConstants);DEBUG</DefineConstants>
     </PropertyGroup>
 
-    <Choose>
-        <When Condition="'$(MnB2BannerlordRefAsmsVersion)'!=''">
-            <PropertyGroup>
-                <ReferenceAssemblyGeneratorDir Condition="'$(ReferenceAssemblyGeneratorDir)'==''">..\..\tools\ReferenceAssemblyGenerator</ReferenceAssemblyGeneratorDir>
-                <MnB2BannerlordRefAsmsDir Condition="'$(MnB2BannerlordRefAsmsDir)'==''">$(ReferenceAssemblyGeneratorDir)\ref-$(MnB2BannerlordRefAsmsVersion)</MnB2BannerlordRefAsmsDir>
-            </PropertyGroup>
-            <ItemGroup>
-                <Reference Include="$(MnB2BannerlordRefAsmsDir)\TaleWorlds.*.dll" Exclude="$(MnB2BannerlordRefAsmsDir)\TaleWorlds.Starter.DotNetCore.dll">
-                    <HintPath>%(Identity)</HintPath>
-                    <Private>False</Private>
-                </Reference>
-            </ItemGroup>
-            <ItemGroup>
-                <PackageReference Include="JetBrains.Annotations" Version="2020.1.0" PrivateAssets="All" />
-            </ItemGroup>
-        </When>
-        <Otherwise>
-            <ItemGroup>
-                <Reference Include="$(MnB2BannerlordBinDir)\TaleWorlds.*.dll" Exclude="$(MnB2BannerlordBinDir)\TaleWorlds.Starter.DotNetCore.dll">
-                    <HintPath>%(Identity)</HintPath>
-                    <Private>False</Private>
-                </Reference>
-            </ItemGroup>
-        </Otherwise>
-    </Choose>
-
+    <ItemGroup>
+        <Reference Include="$(MnB2BannerlordBinDir)\TaleWorlds.*.dll" Exclude="$(MnB2BannerlordBinDir)\TaleWorlds.Starter.DotNetCore.dll">
+            <HintPath>%(Identity)</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    
     <ItemGroup>
         <Content Include="..\SubModule.xml" Link="..\..\SubModule.xml">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
         <Content Include="Properties\launchSettings.json" />
     </ItemGroup>
-    <ItemGroup>
-        <Compile Update="**\*.*.cs">
-            <WouldDependOn>$([System.Text.RegularExpressions.Regex]::Replace('%(Filename)', '^(.*?)\..*$', '$1.cs'))</WouldDependOn>
-            <DependentUpon Condition="'%(DependentUpon)' == '' And '%(WouldDependOn)' != '%(Filename)'">%(WouldDependOn)</DependentUpon>
-        </Compile>
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Include="HardwareProviders.CPU.Standard" Version="2.0.1" />
-        <PackageReference Include="HardwareProviders.Standard" Version="2.0.1" />
-        <PackageReference Include="Lib.Harmony" Version="2.0.1" PrivateAssets="All">
-            <GeneratePathProperty>True</GeneratePathProperty>
-            <NoWarn>NU1701</NoWarn>
-        </PackageReference>
-        <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="1.3.3" />
-        <PackageReference Include="Microsoft.SourceLink.Common" Version="1.0.0" />
-        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" />
-        <PackageReference Include="Sigil" Version="5.0.0" />
-        <PackageReference Include="System.Numerics.Vectors" Version="4.4.0" />
-        <PackageReference Include="System.Reflection.Emit" Version="4.7.0" />
-        <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.7.1" />
-        <PackageReference Include="TextCopy" Version="3.0.2" />
-        <PackageReference Include="Tomlyn" Version="0.1.2" />
-    </ItemGroup>
-
-    <Target Name="ReportVersionInfo" BeforeTargets="AddSourceRevisionToInformationalVersion" Condition="'$(DesignTimeBuild)' != 'true'">
-        <PropertyGroup>
-            <SourceRevisionId Condition="'$(SourceRevisionId)' != ''">$(SourceRevisionId.Substring(0,7))</SourceRevisionId>
-        </PropertyGroup>
-    </Target>
-
+    
     <Target Name="PostBuildCleanup" AfterTargets="Build">
         <Message Importance="high" Text="PostBuildCleanup" />
         <ItemGroup>
@@ -100,4 +51,5 @@
         </ItemGroup>
         <Delete Files="@(FilesToRemove)" ContinueOnError="false" />
     </Target>
+    
 </Project>
