@@ -2,6 +2,11 @@
 <!-- This file must be imported by all project files at the top of the project file. -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
+        <!-- Just change it for your self. -->
         <GameFolder>C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord</GameFolder>
+        
+        <GameBinDir>$(GameFolder)/bin/Win64_Shipping_Client</GameBinDir>
+        <GameLauncherName>TaleWorlds.MountAndBlade.Launcher.exe</GameLauncherName>
+        <GameLauncher>$(GameBinDir)/$(GameLauncherName)</GameLauncher>
     </PropertyGroup>
 </Project>
