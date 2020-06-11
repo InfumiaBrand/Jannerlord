@@ -5,6 +5,7 @@
         <OutputPath>C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Jannerlord\bin\Win64_Shipping_Client\</OutputPath>
         <Title>Jannerlord</Title>
         <Authors>Hasan Demirtaş</Authors>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <Description>Allows you to make Bannerlord mods with Java.</Description>
         <PackageProjectUrl>https://github.com/portlek/Jannerlord</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/portlek/Jannerlord/blob/master/LICENSE</PackageLicenseUrl>
