@@ -96,7 +96,7 @@
     <Content Include=".git\packed-refs" />
     <Content Include=".git\refs\heads\master" />
     <Content Include=".git\refs\remotes\origin\HEAD" />
-    <Content Include="Readme.txt" />
+    <Content Include="Readme.md" />
     <Content Include="SubModule.xml" />
   </ItemGroup>
   <ItemGroup>

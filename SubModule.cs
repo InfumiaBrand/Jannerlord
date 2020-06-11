@@ -1,9 +1,8 @@
 ﻿using TaleWorlds.MountAndBlade;
 
-namespace JannerlordTemplate
+namespace Jannerlord
 {
     public class SubModule : MBSubModuleBase
     {
-
     }
 }
