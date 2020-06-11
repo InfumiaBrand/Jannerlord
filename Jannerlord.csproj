@@ -9,8 +9,8 @@
     <ProjectGuid>{4BC86777-7CBA-43E3-8141-4DBA604EDCED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JannerlordTemplate</RootNamespace>
-    <AssemblyName>JannerlordTemplate</AssemblyName>
+    <RootNamespace>Jannerlord</RootNamespace>
+    <AssemblyName>Jannerlord</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
