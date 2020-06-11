@@ -14,7 +14,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="..\SubModule.xml" Link="..\..\SubModule.xml" CopyToOutputDirectory="PreserveNewest" />
+        <None Include="..\SubModule.xml" Link="..\..\SubModule.xml" CopyToOutputDirectory="PreserveNewest"/>
     </ItemGroup>
 
     <ItemGroup>
